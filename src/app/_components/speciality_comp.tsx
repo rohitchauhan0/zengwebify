@@ -2,7 +2,15 @@ import Image from 'next/image'
 import React from 'react'
 import { motion } from "framer-motion";
 
-const SpecialityComp = ({ img, title, p1, p2, p3 }: any) => {
+interface Props {
+    img: string,
+    title: string,
+    p1: string,
+    p2: string,
+    p3: string
+}
+
+const SpecialityComp = ({ img, title, p1, p2, p3 }: Props) => {
     return (
         <div className=' flex items-center space-x-10'>
             <motion.div

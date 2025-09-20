@@ -35,7 +35,7 @@ const reviews = [
   },
 ];
 
-const ReviewCard = ({ review }: any) => {
+const ReviewCard = ({ review }: { review: typeof reviews[number] }) => {
   return (
     <div className="bg-white shadow-xl rounded-2xl p-6 min-w-[288px] flex flex-col justify-between border border-gray-100 break-words">
       <div className="flex items-center mb-3">

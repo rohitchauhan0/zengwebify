@@ -36,7 +36,7 @@ export const Navbar = () => {
     <CardNav
       logo={"/3d-blue-logo.png"}
       logoAlt="Company Logo"
-      items={items as any}
+      items={items as any} // eslint-disable-line @typescript-eslint/no-explicit-any
       baseColor="#fff"
       menuColor="#000"
       buttonBgColor="#111"

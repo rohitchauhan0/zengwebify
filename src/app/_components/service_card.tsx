@@ -1,7 +1,16 @@
 // service_card.tsx
 import React, { useRef, useEffect, useState } from "react";
 
-const ServiceCard = ({ video, title, p1, p2, p3, p4 }: any) => {
+interface Props {
+    video: string;
+    title: string;
+    p1: string;
+    p2: string;
+    p3: string;
+    p4?: string;
+}
+
+const ServiceCard = ({ video, title, p1, p2, p3, p4 }: Props) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
