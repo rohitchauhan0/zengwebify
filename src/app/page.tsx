@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Particles from "@/react-bits-comp/bf-particle";
 import RoundedTextCircle from "./_components/rounded_circle";
 import { useRef } from "react";
