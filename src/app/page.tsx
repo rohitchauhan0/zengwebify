@@ -176,19 +176,7 @@ const Page = () => {
       </div>
 
       <div className=" w-full bg-white min-h-screen relative z-[9999] pt-20 overflow-hidden">
-      <div className="absolute inset-0 z-[999]">
-          <Particles
-            particleColors={['#000000', '#880808']}
-            particleCount={2000}
-            particleSpread={10}
-            speed={0.1}
-            particleBaseSize={70}
-            moveParticlesOnHover={true}
-            alphaParticles={false}
-            disableRotation={false}
-          />
-
-        </div>
+      
             <Reviews/>
        
       </div>
