@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Cedarville_Cursive, Geist, Geist_Mono, Manrope } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,7 +10,27 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+
 });
+
+
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
+
+const cedarville = Cedarville_Cursive({
+  variable: "--font-cedarville",
+  subsets: ["latin"],
+  weight: ["400"],
+})
+
+const bricolageGrotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage-grotesque",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${cedarville.variable} ${bricolageGrotesque.variable} antialiased`}
       >
         {children}
       </body>
